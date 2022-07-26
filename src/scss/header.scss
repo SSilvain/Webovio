@@ -1,9 +1,46 @@
 //====================================================================================================
+.header {
+	display: flex;
+	justify-content: space-between;
+
+	// .header__menu
+
+	&__menu {
+		background: #ddd;
+	}
+}
+.menu {
+	// .menu__body
+
+	&__body {
+		
+	}
+
+	// .menu__list
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		column-gap: rem(20);
+	}
+
+	// .menu__item
+
+	&__item {
+	}
+
+	// .menu__link
+
+	&__link {
+	}
+}
+.icon-menu {
+}
 
 //====================================================================================================
 
 //Burger
-/*
+
 .icon-menu {
 	display: none;
 	@media (max-width: $mobile) {
@@ -39,6 +76,7 @@
 			}
 			&::before,
 			&::after {
+				
 			}
 			&::before {
 				top: calc(50% - rem(1));
@@ -51,4 +89,4 @@
 		}
 	}
 }
-*/
+

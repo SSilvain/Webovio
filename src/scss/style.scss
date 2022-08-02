@@ -95,6 +95,9 @@ body {
 Например header__container, main__container и т.д.
 Снипет (HTML): cnt
 */
+
+
+
 @if ($responsiveType==1) {
 	// Отзывчивая
 	[class*="__container"] {
@@ -132,6 +135,12 @@ body {
 			}
 		}
 	}
+}
+
+[class*="__container-big"] {
+	max-width: rem($maxWidth);
+	margin: 0 auto;
+	box-sizing: content-box;
 }
 
 // Подключение базовых стилей, шаблонов (заготовок) и вспомогательных  классов

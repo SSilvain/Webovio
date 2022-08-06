@@ -1,6 +1,7 @@
 //====================================================================================================
 .header {
-	background: url("@img/bg-header.png") no-repeat top center;
+	margin-bottom: rem(80);
+	
 	@include adaptiveValue("padding-top", 40, 10);
 	@include adaptiveValue("padding-bottom", 40, 10);
 
@@ -174,89 +175,3 @@
 }
 
 
-.header {
-
-	// .header__content
-
-	&__content {}
-}
-
-.content-block {
-
-	// .content-block__container
-
-	&__container {}
-
-	// .content-block__min-title
-
-	&__min-title {
-		font-weight: 400;
-		font-size: rem(14);
-		line-height: 21px;
-
-
-		color: $lightColor;
-	}
-
-	// .content-block__title
-
-	&__title {
-		font-weight: 700;
-		font-size: 60px;
-		line-height: 74px;
-		color: $lightColor;
-	}
-
-	// .content-block__text
-
-	&__text {
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 26px;
-		color: $lightColor;
-	}
-
-	// .content-block__link
-
-	&__link,
-	&__link:link,
-	&__link:visited {
-		font-weight: 700;
-		font-size: 16px;
-		line-height: 24px;
-		color: $linkColor;
-		position: relative;
-		padding-left: 7px;
-		transition: all .3s ease 0s;
-
-		@media (any-hover: hover) {
-			&:hover {
-				color: #FFD723;
-				&::after {
-					background-color: #FFD723;
-				}
-			}
-		}
-
-		&::before {
-			position: absolute;
-			content: "";
-			height: 10px;
-			width: 10px;
-			top: 50%;
-			left: -8px;
-			transform: translate(0, -50%);
-			background: url("@img/icons/arrow.png") no-repeat;
-		}
-		&::after {
-			position: absolute;
-			content: "";
-			height: 1px;
-			background-color: $linkColor;
-			transition: all .3s ease 0s;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-		}
-	}
-}

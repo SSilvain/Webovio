@@ -51,44 +51,7 @@
 	&__link,
 	&__link:link,
 	&__link:visited {
-		font-weight: 700;
-		font-size: 16px;
-		line-height: 24px;
-		color: $linkColor;
-		position: relative;
-		padding-left: 7px;
-		transition: all .3s ease 0s;
-		margin-left: 7px;
 
-		@media (any-hover: hover) {
-			&:hover {
-				color: $hoverColor;
-				&::after {
-					background-color: $hoverColor;
-				}
-			}
-		}
-
-		&::before {
-			position: absolute;
-			content: "";
-			height: 10px;
-			width: 10px;
-			top: 50%;
-			left: -8px;
-			transform: translate(0, -50%);
-			background: url("@img/icons/arrow.png") no-repeat;
-		}
-		&::after {
-			position: absolute;
-			content: "";
-			height: 1px;
-			background-color: $linkColor;
-			transition: all .3s ease 0s;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-		}
 	}
 }
 //====================================================================================================
@@ -133,3 +96,106 @@
 	}
 
 }
+
+
+//==============================================================================
+
+.page {
+
+	// .page__strategy
+
+	&__strategy {
+	}
+}
+.strategy {
+
+	// .strategy__container
+
+	&__container {
+	}
+
+	// .strategy__content
+
+	&__content {
+	}
+
+	// .strategy__min-title
+
+	&__min-title {
+	}
+
+	// .strategy__title
+
+	&__title {
+	}
+
+	// .strategy__text
+
+	&__text {
+	}
+
+	// .strategy__link
+
+	&__link {
+	}
+
+	// .strategy__card
+
+	&__card {
+	}
+}
+.card {
+
+	// .card__text
+
+	&__text {
+	}
+
+	// .card__text--big
+
+	&__text--big {
+	}
+
+	// .card__user
+
+	&__user {
+	}
+
+	// .card__avatar
+
+	&__avatar {
+	}
+
+	// .card__avatar--big
+
+	&__avatar--big {
+	}
+
+	// .card__content
+
+	&__content {
+	}
+
+	// .card__name
+
+	&__name {
+	}
+
+	// .card__name--big
+
+	&__name--big {
+	}
+
+	// .card__position
+
+	&__position {
+	}
+
+	// .card__position--big
+
+	&__position--big {
+	}
+}
+.card--big {
+}
+

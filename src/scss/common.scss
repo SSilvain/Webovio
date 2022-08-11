@@ -3,7 +3,7 @@
 .title {
 	font-weight: 700;
 	font-size: rem(36);
-	line-height: 46px;
+	line-height: math.div(46, 36);
 	color: $darkColor;
 }
 
@@ -60,4 +60,104 @@
 		left: 0;
 		width: 100%;
 	}
+}
+
+//==========================================
+.card-block{
+	position: relative;
+}
+.card {
+	position: absolute;
+	background-color: $backgroundColor;
+	border-radius: 8px;
+	bottom: -70px;
+	right: -70px;
+	padding: 30px 40px;
+	box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+	width: rem(453);
+	// .card__text
+
+	&__text {
+		font-style: italic;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: math.div(26, 16);
+		color: $darkColor;
+		margin-bottom: rem(30);
+	}
+
+	// .card__text--big
+
+	&__text--big {
+		font-size: 24px;
+		line-height: math.div(40, 24);
+		margin-bottom: rem(40);
+	}
+
+	// .card__user
+
+	&__user {
+		display: flex;
+		// margin-bottom: rem(40);
+	}
+
+	// .card__avatar
+
+	&__avatar {
+		border-radius: 50%;
+		overflow: hidden;
+		margin-right: rem(20);
+		width: rem(46);
+		height: rem(46);
+	}
+
+	// .card__avatar--big
+
+	&__avatar--big {
+		width: rem(90);
+		height: rem(90);}
+
+	// .card__content
+
+	&__content {
+		padding-top: rem(0);
+	}
+
+	// .card__name
+
+	&__name {
+		font-weight: 700;
+		color: $darkColor;
+		margin-bottom: rem(5);
+		font-size: 16px;
+		line-height: math.div(24, 16);
+	}
+
+	// .card__name--big
+
+	&__name--big {
+		font-size: 22px;
+		line-height: math.div(33, 22);}
+
+	// .card__position
+
+	&__position {
+		font-weight: 400;
+		color: #152934;
+		font-size: 14px;
+		line-height: math.div(21, 14);
+	}
+
+	// .card__position--big
+
+	&__position--big {
+		font-size: 16px;
+		line-height: math.div(24, 16);}
+}
+
+.card--right {
+}
+
+.card--big {
+	position: relative;
 }

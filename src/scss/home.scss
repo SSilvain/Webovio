@@ -109,7 +109,7 @@
 }
 
 .strategy {
-	margin-bottom: rem(80);
+	margin-bottom: rem(120);
 
 	// .strategy__container
 
@@ -120,7 +120,7 @@
 	&__wrapper {
 		display: flex;
 		border-bottom: 1px solid rgba(#979797, .2);
-		padding-bottom: rem(50);
+		padding-bottom: rem(150);
 	}
 
 	// .strategy__content
@@ -174,10 +174,9 @@
 
 	// .page__awesome
 
-	&__awesome {
-		
-	}
+	&__awesome {}
 }
+
 .awesome {
 	margin-bottom: rem(80);
 
@@ -200,42 +199,34 @@
 		padding-right: rem(150);
 	}
 }
-.title {
-}
-.text {
-}
+
+.title {}
+
+.text {}
+
 //=======================================================================================
 .page {
 
 	// .page__wall
 
-	&__wall {
-	}
+	&__wall {}
 }
+
 .wall {
 
 	// .wall__container-big
 
 	&__container-big {
 		background: url("@img/bg-wall.png") top left no-repeat;
-		padding-bottom: rem(150);
 	}
 
 	// .wall__container
 
-	&__container {
-		display: flex;
-		justify-content: space-between;
-		min-height: rem(550);
-		& > *{
-			flex: 1 1 50%;
-		}
-	}
+	&__container {}
 
-	// .wall__image-block
+	// .wall__card-block
 
-	&__card-block {
-	}
+	&__card-block {}
 
 	// .wall__card
 
@@ -245,27 +236,7 @@
 
 	// .wall__content-block
 
-	&__content-block {
-		padding-top: rem(100);
-		padding-left: rem(100);
-	}
-
-	// .wall__title
-
-	&__title {
-		margin-bottom: rem(30);
-	}
-
-	// .wall__text
-
-	&__text {
-		margin-bottom: rem(80);
-	}
-
-	// .wall__link
-
-	&__link {
-	}
+	&__content-block {}
 }
 
 
@@ -275,9 +246,9 @@
 
 	// .page__3d
 
-	&__section3d {
-	}
+	&__section3d {}
 }
+
 .section3d {
 
 	// .section3d__container-big
@@ -288,28 +259,23 @@
 
 	// .section3d__container
 
-	&__container {
-	}
+	&__container {}
 
 	// .section3d__content-block
 
-	&__content-block {
-	}
+	&__content-block {}
 
 	// .section3d__title
 
-	&__title {
-	}
+	&__title {}
 
 	// .section3d__text
 
-	&__text {
-	}
+	&__text {}
 
 	// .section3d__link
 
-	&__link {
-	}
+	&__link {}
 
 	// .section3d__card-block
 
@@ -319,6 +285,155 @@
 
 	// .section3d__card
 
-	&__card {
+	&__card {}
+}
+
+//=============================================================================================
+
+.page {
+
+	// .page__online
+
+	&__online {}
+}
+
+.online {
+
+	// .online__container-big
+
+	&__container-big {
+		background: url("@img/bg-future.png") top left no-repeat;
+	}
+
+	// .online__container
+
+	&__container {}
+
+	// .online__card-block
+
+	&__card-block {}
+
+	// .online__card
+
+	&__card {}
+
+	// .online__content-block
+
+	&__content-block {}
+}
+
+//==================================================================================================================
+
+.page {
+
+	// .page__deation
+
+	&__deation {
+		margin-bottom: rem(100);
+	}
+}
+
+.deation {
+
+	// .deation__container
+
+	&__container {}
+
+	// .deation__title
+
+	&__title {
+		width: rem(600);
+		margin-bottom: rem(40);
+	}
+
+	// .deation__body
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		// margin: 0 rem(-25);
+		flex-wrap: wrap;
+		// display: grid;
+		// grid-template-columns: 25% 25% 25% 24%;
+		// grid-template-rows: 25%  25% 50%;
+	}
+
+	// .deation__block
+
+	&__block {
+		width: rem(255);
+		padding-top: rem(15);
+		padding-bottom: rem(15);
+		padding-left: rem(25);
+		padding-right: rem(25);
+	}
+}
+
+.block {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	// .block__content
+
+	&__content {
+		margin-bottom: rem(30);
+	}
+
+	// .block__title
+
+	&__title {
+		font-weight: 500;
+		font-size: rem(24);
+		line-height: math.div(34, 24);
+		margin-bottom: rem(15);
+		text-transform: uppercase;
+		min-height: rem(68);
+	}
+
+	// .block__text
+
+	&__text {
+		font-size: rem(14);
+		line-height: math.div(26, 14);
+
+	}
+
+	// .block__link
+
+	&__link {}
+}
+
+//============================================================================================================
+
+.page {
+
+	// .page__bottom
+
+	&__bottom {
+		margin-bottom: rem(100);
+	}
+}
+
+.bottom {
+
+	// .bottom__container-big
+
+	&__container-big {}
+
+	// .bottom__title
+
+	&__title {
+		width: rem(822);
+		font-size: rem(60);
+		line-height: math.div(74, 60);
+		margin-bottom: rem(30);
+	}
+
+	// .bottom__link
+
+	&__link {
+		text-transform: uppercase;
 	}
 }

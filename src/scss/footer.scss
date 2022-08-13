@@ -1,3 +1,147 @@
 //====================================================================================================
+.footer {
+	background: url("@img/bg-footer.png") top center no-repeat;
+	color: $footerColor;
+
+	// .footer__container
+
+	&__container {}
+
+	// .footer__top
+
+	&__top {}
+
+	// .footer__mid
+
+	&__mid {}
+
+	// .footer__bottom
+
+	&__bottom {}
+
+	// .footer__logo
+
+	&__logo {}
+
+	// .footer__copyright
+
+	&__copyright {}
+}
+
+.top-footer {
+	display: flex;
+	border-bottom: 1px solid $footerLine;
+	padding-top: rem(40);
+	padding-bottom: rem(80);
+
+	// .top__block
+
+	&__block {
+		margin-right: rem(100);
+	}
+
+	// .top__title
+
+	&__title {
+		font-weight: 400;
+		font-size: rem(16);
+		line-height: math.div(40, 16);
+		color: $footerColor;
+	}
+
+	// .top__text
+
+	&__text {
+		color: $lightColor;
+	}
+}
+
+.mid-footer {
+	display: flex;
+	width: 100%;
+	border-bottom: 1px solid $footerLine;
+	padding-top: rem(80);
+	padding-bottom: rem(80);
+
+	// .mid__links
+
+	&__links {
+		// flex-direction: row;
+		display: flex;
+		// flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	// .mid__links-block
+
+	&__links-block {
+		// width: 33%;
+		// flex: 0 0 auto;
+		margin-right: rem(85);
+		// width: 100px;
+	}
+
+	// .mid__links-title
+
+	&__links-title,
+	&__info-title {
+		font-weight: 600;
+		text-transform: uppercase;
+		font-size: rem(16);
+		line-height: math.div(38, 16);
+		color: $lightColor;
+		margin-bottom: rem(10);
+	}
+
+	// .mid__links-list
+
+	&__links-list {}
+
+	// .mid__links-link
+
+	&__links-link {
+		margin-bottom: rem(10);
+
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+	}
+
+	// .mid__info
+
+	&__info {}
+
+	// .mid__info-title
+
+	&__info-title {}
+
+	// .mid__info-text
+
+	&__info-text {
+		margin-bottom: rem(30);
+	}
+
+	// .mid__info-email
+
+	&__info-email {
+		color: $lightColor;
+		font-weight: 700;
+		font-size: rem(24);
+		line-height: math.div(38 , 24);
+	}
+
+	// .mid__info-socials
+
+	&__info-socials {}
+
+	// .mid__info-ico
+
+	&__info-ico {}
+}
+
+.text {}
+
+.email {}
 
 //====================================================================================================

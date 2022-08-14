@@ -63,7 +63,7 @@
 	padding-top: rem(80);
 	padding-bottom: rem(80);
 
-	// .mid__links
+	// .mid-footer__links
 
 	&__links {
 		// flex-direction: row;
@@ -73,7 +73,7 @@
 		align-items: flex-start;
 	}
 
-	// .mid__links-block
+	// .mid-footer__links-block
 
 	&__links-block {
 		// width: 33%;
@@ -82,7 +82,7 @@
 		// width: 100px;
 	}
 
-	// .mid__links-title
+	// .mid-footer__links-title
 
 	&__links-title,
 	&__info-title {
@@ -94,11 +94,11 @@
 		margin-bottom: rem(10);
 	}
 
-	// .mid__links-list
+	// .mid-footer__links-list
 
 	&__links-list {}
 
-	// .mid__links-link
+	// .mid-footer__links-link
 
 	&__links-link {
 		margin-bottom: rem(10);
@@ -108,36 +108,84 @@
 		}
 	}
 
-	// .mid__info
+	// .mid-footer__info
 
 	&__info {}
 
-	// .mid__info-title
+	// .mid-footer__info-title
 
 	&__info-title {}
 
-	// .mid__info-text
+	// .mid-footer__info-text
 
 	&__info-text {
 		margin-bottom: rem(30);
 	}
 
-	// .mid__info-email
+	// .mid-footer__info-email
 
 	&__info-email {
 		color: $lightColor;
 		font-weight: 700;
 		font-size: rem(24);
-		line-height: math.div(38 , 24);
+		line-height: math.div(38, 24);
+		margin-bottom: rem(20);
 	}
 
-	// .mid__info-socials
+	// .mid-footer__info-socials
 
-	&__info-socials {}
+	&__info-socials {
+		display: flex;
+	}
 
-	// .mid__info-ico
+	// .mid-footer__info-ico
 
-	&__info-ico {}
+	&__info-social {
+		background-color: rgba(#000,.2);
+		border-radius: 50%;
+		padding: rem(10);
+		width: rem(50);
+		height: rem(50);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: rem(10);
+		transition: background .3s ease;
+		&:last-child{
+			margin-right: 0;
+		}
+		@media (any-hover: hover){
+			&:hover{
+				background-color: $hoverColor;
+			}
+		}
+	}
+
+	&__info-icon {
+		fill: $lightColor;
+		width: rem(20);
+		height: rem(20);
+	}
+}
+
+.fb-icon {
+	width: rem(20);
+	height: rem(15);
+}
+
+.g-icon {
+	width: rem(20);
+	height: rem(20);
+}
+
+.in-icon {
+	width: rem(13);
+	height: rem(20);
+}
+
+.tw-icon {
+	width: rem(15);
+	height: rem(20);
 }
 
 .text {}

@@ -100,11 +100,33 @@
 
 	// .mid-footer__links-link
 
-	&__links-link {
+	&__links-item {
 		margin-bottom: rem(10);
+		overflow: hidden;
 
 		&:last-child {
 			margin: 0px 0px 0px 0px;
+		}
+	}
+	&__link{
+		position: relative;
+		&::after{
+			content:'';
+			position: absolute;
+			height: 1px;
+			width: 100%;
+			bottom: 0;
+			left: -100%;
+			background-color: $footerColor;
+			transition: left .3s ease;
+			
+		}
+		@media (any-hover: hover){
+			&:hover{
+				&::after{
+					left: 0;
+				}
+			}
 		}
 	}
 
@@ -160,7 +182,7 @@
 			&:hover {
 				background-color: $hoverColor;
 				.mid-footer__info-icon {
-					transform: scale(150%)
+					transform: scale(120%)
 				}
 			}
 		}
@@ -175,22 +197,18 @@
 }
 
 .fb-icon {
-	// width: rem(20);
 	height: rem(15);
 }
 
 .g-icon {
-	// width: rem(20);
 	height: rem(20);
 }
 
 .in-icon {
 	width: rem(13);
-	// height: rem(15);
 }
 
 .tw-icon {
-	// width: rem(15);
 	height: rem(13);
 }
 

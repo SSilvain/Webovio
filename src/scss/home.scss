@@ -56,7 +56,8 @@
 //====================================================================================================
 .partners {
 	position: relative;
-	margin-top: 150px;
+	// margin-top: 150px;
+	@include adaptiveValue("margin-top", 150, 0);
 
 	// .partners__container-big
 

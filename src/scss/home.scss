@@ -21,7 +21,8 @@
 	&__min-title {
 		font-weight: 400;
 		font-size: rem(14);
-		line-height: 21px;
+		@include adaptiveValue("font-size", 14, 10);
+		line-height: math.div(21,14);
 		color: $lightColor;
 		margin-bottom: rem(10);
 	}
@@ -30,10 +31,12 @@
 
 	&__title {
 		font-weight: 700;
-		font-size: 60px;
-		line-height: 74px;
+		// font-size: 60px;
+		@include adaptiveValue("font-size", 60, 16);
+		line-height: math.div(74,60);
 		color: $lightColor;
-		margin-bottom: rem(20);
+		// margin-bottom: rem(20);
+		@include adaptiveValue("margin-bottom", 20, 0);
 	}
 
 	// .main-block__text
@@ -41,9 +44,19 @@
 	&__text {
 		font-weight: 400;
 		font-size: 16px;
-		line-height: 26px;
+		@include adaptiveValue("font-size", 16, 12);
+		line-height: math.div(26,16);
+		
 		color: $lightColor;
 		margin-bottom: rem(30);
+		@media (max-width:$mobile){
+			line-height: math.div(22,16);
+			
+		}
+		@media (max-width:$mobileSmall){
+			line-height: math.div(16,16);
+			  
+		}
 	}
 
 	// .main-block__link

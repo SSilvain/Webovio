@@ -1,9 +1,10 @@
 //====================================================================================================
 .header {
+	margin-bottom: rem(80);
+	@include adaptiveValue("margin-bottom", 80, 5);
 	// .header__container
 
 	&__container-big {
-		margin-bottom: rem(80);
 		position: relative;
 
 		@include adaptiveValue("padding-top", 40, 10);
@@ -24,6 +25,9 @@
 			@media (max-width:$pc) {
 				background-size: contain;
 			}
+			@media (max-width:$mobileSmall){
+				 background-size: auto; 
+			}
 		}
 	}
 
@@ -39,6 +43,15 @@
 
 	&__logo {
 		margin-right: rem(50);
+	}
+
+	// .header__img
+
+	&__img {
+		// width: 100px;
+		@include adaptiveValue("width", 258,180 );
+		max-height: rem(40);
+		height: auto;
 	}
 
 	// .header__menu
